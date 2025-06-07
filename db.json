@@ -1,0 +1,22 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "image": "vege.png",
+      "title": "Vege Store",
+      "description": "An online vegetable store with a clean interface and responsive layout."
+    },
+    {
+      "id": 2,
+      "image": "bus.png",
+      "title": "Bus Booking App",
+      "description": "A user-friendly app for booking bus seats with seat selection and confirmation."
+    },
+    {
+      "id": 3,
+      "image": "shop.png",
+      "title": "My Shop",
+      "description": "An eCommerce platform where users can browse, add to cart, and checkout smoothly."
+    }
+  ]
+}
