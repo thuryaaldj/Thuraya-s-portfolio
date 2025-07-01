@@ -58,6 +58,27 @@
   .animate-slide-in-right {
     animation: slide-in-right 1s ease-out forwards;
   }
+
+  .modal-overlay {
+  @apply fixed inset-0 bg-black/30 backdrop-blur-md flex items-center justify-center z-50;
+}
+
+.modal-content.about {
+  @apply bg-white rounded-2xl p-10 w-full max-w-xl relative shadow-xl text-left space-y-4 border border-black;
+}
+
+.modal-title {
+  @apply text-3xl font-bold text-black;
+}
+
+.modal-description {
+  @apply text-lg text-black leading-relaxed;
+}
+
+.close-button {
+  @apply absolute top-4 right-4 text-black text-2xl font-bold hover:text-[#CB405D] transition;
+}
+
   
   .client-review-section {
     @apply bg-[#F9F5F2] py-20 px-4;

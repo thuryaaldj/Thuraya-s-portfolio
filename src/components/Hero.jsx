@@ -1,11 +1,13 @@
-import HeroImage from "../assets/Hero.png"; 
-import { motion } from "framer-motion";
+import { useState } from "react";
+import HeroImage from "../assets/Hero.png";
+import { FaTimes } from "react-icons/fa";
 
 const Hero = () => {
+  const [showAbout, setShowAbout] = useState(false);
+
   return (
     <section className="hero-section">
       <div className="hero-container">
-        
 
         <div className="hero-text">
           <p className="hero-greeting">Hi, my name is THURAYA</p>
@@ -13,9 +15,10 @@ const Hero = () => {
           <p className="hero-description">
             I love crafting beautiful web experiences and responsive interfaces 
           </p>
-          <button className="hero-button">About Me</button>
+          <button className="hero-button" onClick={() => setShowAbout(true)}>
+            About Me
+          </button>
         </div>
-
 
         <div className="hero-image-container">
           <img
@@ -26,8 +29,23 @@ const Hero = () => {
             className="hero-image"
           />
         </div>
-
       </div>
+
+      {showAbout && (
+        <div className="modal-overlay">
+          <div className="modal-content about">
+            <button className="close-button" onClick={() => setShowAbout(false)}>
+              <FaTimes />
+            </button>
+            <h3 className="modal-title">About Me</h3>
+            <p className="modal-description">
+              I'm Thuraya, a passionate Front-End Developer with a keen eye for clean design and smooth user experiences. 
+              I specialize in crafting responsive websites using modern frameworks like React. 
+              My goal is to build interfaces that are not only beautiful but also intuitive and accessible.
+            </p>
+          </div>
+        </div>
+      )}
     </section>
   );
 };
