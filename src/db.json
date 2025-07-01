@@ -1,0 +1,32 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "image": "vege.png",
+      "title": "Vege Store",
+      "description": "An online vegetable store with a clean interface and responsive layout.",
+      "link": "https://github.com/thuryaaldj/Fru-vege-store.git"
+    },
+    {
+      "id": 2,
+      "image": "bus.png",
+      "title": "Bus Booking App",
+      "description": "A user-friendly app for booking bus seats with seat selection and confirmation.",
+      "link": "https://github.com/yourusername/bus-booking-app"
+    },
+    {
+      "id": 3,
+      "image": "shop.png",
+      "title": "My Shop",
+      "description": "An eCommerce platform where users can browse, add to cart, and checkout smoothly.",
+      "link": "https://github.com/thuryaaldj/My-Shop"
+    },
+    {
+      "id": 4,
+      "image": "awwwards.png",
+      "title": "Award-Winning Animated Website",
+      "description": "responsive web app for award-winning featuring a clean UI, smooth animations, and modern design ",
+      "link": "https://github.com/thuryaaldj/animated-awwwards.git"
+    }
+  ]
+}

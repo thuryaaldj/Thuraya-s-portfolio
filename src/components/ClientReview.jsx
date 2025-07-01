@@ -47,7 +47,11 @@ const ClientReview = () => {
       </div>
 
       <div className="client-review-cards">
-     {reviews.map((review)=>(<ReviewCard project={review.project} clientName={review.clientName} review={review.review} key={review.clientName} />))}
+    {reviews.map((review ,index)=>(<ReviewCard 
+    key={index}
+    project={review.project} clientName={review.clientName} review={review.review} 
+    // key={review.clientName}
+       />))}
       </div>
     </section>
   );
