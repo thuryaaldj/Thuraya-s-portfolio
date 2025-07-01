@@ -99,6 +99,39 @@
     @apply bg-[#CB405D] text-black px-8 py-4 rounded-md font-semibold border border-black shadow-[4px_4px_0px_#000] hover:translate-x-1 hover:translate-y-1 transition-all duration-300;
   }
 
+.modal-overlay {
+  @apply fixed inset-0 bg-black/30 backdrop-blur-md flex items-center justify-center z-50;
+}
+
+.modal-content {
+  @apply bg-white rounded-2xl p-10 w-full max-w-2xl relative shadow-xl text-left space-y-6 border border-black;
+}
+
+.modal-content.expanded {
+  @apply max-w-2xl;
+}
+
+.modal-title {
+  @apply text-4xl font-bold text-black;
+}
+
+.modal-list {
+  @apply space-y-4 text-black text-lg;
+}
+
+.modal-list li {
+  @apply flex items-center gap-3;
+}
+
+.modal-list a {
+  @apply text-[#CB405D] underline hover:text-black transition;
+}
+
+.close-button {
+  @apply absolute top-4 right-4 text-black text-2xl font-bold hover:text-[#CB405D] transition;
+}
+
+
   .footer-section {
     @apply bg-[#F9F5F2] border-t border-gray-300 py-6 px-4;
   }
