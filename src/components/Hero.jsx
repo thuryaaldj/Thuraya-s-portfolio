@@ -39,9 +39,14 @@ const Hero = () => {
             </button>
             <h3 className="modal-title">About Me</h3>
             <p className="modal-description">
-              I'm Thuraya, a passionate Front-End Developer with a keen eye for clean design and smooth user experiences. 
-              I specialize in crafting responsive websites using modern frameworks like React. 
-              My goal is to build interfaces that are not only beautiful but also intuitive and accessible.
+              Motivated and passionate front-end developer with solid experience in building responsive and user
+friendly web  
+applications using HTML, CSS, JavaScript, and React. Skilled in working with REST APIs, Axios, and modern 
+UI  
+libraries such as Tailwind CSS and shadcn/ui. Proven ability to work effectively in a team, meet deadlines, 
+and adapt to  
+new technologies. Strong attention to detail and a commitment to delivering clean, maintainable 
+code. Continuously improving through self-learning and real-world projects.
             </p>
           </div>
         </div>
