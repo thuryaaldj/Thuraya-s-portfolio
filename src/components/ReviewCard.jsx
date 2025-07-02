@@ -11,7 +11,7 @@ const ReviewCard = ({project ,clientName , review}) => {
             {review}
           </p>
         </div>
-        <button className="review-button">Button</button>
+        {/* <button className="review-button">Button</button> */}
       </div>
     </div>
   );

@@ -3,40 +3,40 @@ import ReviewCard from "./ReviewCard";
 const ClientReview = () => {
   const reviews = [
     {
-      project: "e-commerce0",
+      project: "Vege Store",
 
-      clientName: "test",
-      review: "test",
+      clientName: "Ahmad",
+      review: "......" ,
     },
     {
-      project: "e-commerce0",
+      project: "Bus Booking App",
 
-      clientName: "test",
-      review: "test",
+      clientName: "Nour",
+      review: "this is amazing",
     },
     {
-      project: "e-commerce0",
+      project: "e-commerce",
 
-      clientName: "test",
-      review: "test",
+      clientName: "nour",
+      review: "..........",
     },
     {
-      project: "e-commerce0",
+      project: "vege",
 
-      clientName: "test",
-      review: "test",
+      clientName: "Rama",
+      review: "....",
+    },
+     {
+      project: "e-commerce",
+
+      clientName: "nour",
+      review: "..........",
     },
     {
-      project: "e-commerce0",
+      project: "Bus Booking App",
 
-      clientName: "test",
-      review: "test",
-    },
-    {
-      project: "e-commerce0",
-
-      clientName: "test",
-      review: "test",
+      clientName: "Nour",
+      review: "this is amazing",
     },
   ];
   return (

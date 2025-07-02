@@ -48,12 +48,12 @@ const Contact = () => {
                   GitHub
                 </a>
               </li>
-              <li>
+              {/* <li>
                 <FaFilePdf />
                 <a href="/ThurayaAldj-Front-End" target="_blank" download>
                   {" "}
                   Download My CV </a>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>
