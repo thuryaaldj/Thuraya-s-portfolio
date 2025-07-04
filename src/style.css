@@ -4,80 +4,77 @@
 
 
 @layer components {
-  .hero-section {
-    @apply min-h-screen bg-[#F9F5F2] px-4 py-12;
-  }
+.hero-section {
+  @apply min-h-screen bg-[#F9F5F2] px-4 py-12;
+}
 
-  .hero-container {
-    @apply max-w-[1080px] mx-auto w-full flex flex-col md:flex-row items-center justify-between;
-  }
+.hero-container {
+  @apply max-w-[1080px] mx-auto w-full flex flex-col md:flex-row items-center justify-between gap-8;
+}
 
-  .hero-text {
-    @apply md:w-1/2 space-y-6;
-  }
+.hero-text {
+  @apply md:w-1/2 space-y-6 text-center md:text-left;
+}
 
-  .hero-greeting {
-    @apply text-[22px] text-black;
-  }
+.hero-greeting {
+  @apply text-[20px] md:text-[22px] text-black;
+}
 
-  .hero-title {
-    @apply text-[88px] font-extrabold text-black leading-tight;
-  }
+.hero-title {
+  @apply text-[42px] sm:text-[60px] md:text-[88px] font-extrabold text-black leading-tight;
+}
 
-  .hero-description {
-    @apply text-[22px] text-black;
-  }
+.hero-description {
+  @apply text-[18px] md:text-[22px] text-black;
+}
 
-  .hero-button {
-    @apply bg-[#CB405D] text-black text-[20px] font-medium px-6 py-3 rounded-md border border-black shadow-[4px_4px_0px_#000] hover:translate-x-1 hover:translate-y-1 transition-all duration-300;
-  }
+.hero-button {
+  @apply bg-[#CB405D] text-black text-[18px] md:text-[20px] font-medium px-6 py-3 rounded-md border border-black shadow-[4px_4px_0px_#000] hover:translate-x-1 hover:translate-y-1 transition-all duration-300;
+}
 
-  .hero-image-container {
-    @apply mt-12 md:mt-0 md:w-1/2 flex justify-center;
-  }
+.hero-image-container {
+  @apply mt-12 md:mt-0 md:w-1/2 flex justify-center;
+}
 
-  .hero-image {
-    @apply object-contain;
-  }
-  
-  @keyframes slide-in-right {
-    0% {
-      transform: translateX(100%);
-      opacity: 0;
-    }
-    100% {
-      transform: translateX(0);
-      opacity: 1;
-    }
-  }
+.hero-image {
+  @apply w-[80%] max-w-[400px] md:w-[440px] h-auto object-contain animate-slide-in-right;
+}
 
-  .hero-image {
-    @apply animate-slide-in-right;
+@keyframes slide-in-right {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
   }
-
-  .animate-slide-in-right {
-    animation: slide-in-right 1s ease-out forwards;
+  100% {
+    transform: translateX(0);
+    opacity: 1;
   }
+}
 
-  .modal-overlay {
-  @apply fixed inset-0 bg-black/30 backdrop-blur-md flex items-center justify-center z-50;
+.animate-slide-in-right {
+  animation: slide-in-right 1s ease-out forwards;
+}
+
+.modal-overlay {
+  @apply fixed inset-0 bg-black/30 backdrop-blur-md flex items-center justify-center z-50 px-4;
 }
 
 .modal-content.about {
-  @apply bg-white rounded-2xl p-10 w-full max-w-xl relative shadow-xl text-left space-y-4 border border-black;
+  @apply bg-white rounded-2xl p-6 sm:p-10 w-full max-w-xl relative shadow-xl text-left space-y-4 border border-black;
 }
 
 .modal-title {
-  @apply text-3xl font-bold text-black;
+  @apply text-2xl sm:text-3xl font-bold text-black;
 }
 
 .modal-description {
-  @apply text-lg text-black leading-relaxed;
+  @apply text-base sm:text-lg text-black leading-relaxed;
 }
 
 .close-button {
   @apply absolute top-4 right-4 text-black text-2xl font-bold hover:text-[#CB405D] transition;
 }
+
 
   
   .client-review-section {
@@ -259,12 +256,12 @@
 
 .my-project-card-title {
   @apply text-[20px] font-bold text-black mb-4;
-  /* لو مش عايز الخط font-sourcecode اشيله من هنا */
+
 }
 
 .my-project-card-description {
   @apply text-[16px] text-[#666666];
-  /* برضه شيل font-sourcecode لو ما بدك اياه */
+
 }
 
 .navbar {
@@ -276,7 +273,7 @@
 }
 
 .navbar-logo {
-  @apply text-[35px] text-black font-bold;
+  @apply text-[30px] sm:text-[35px] text-black font-bold;
 }
 
 .navbar-links {
@@ -284,7 +281,11 @@
 }
 
 .navbar-link-item {
-  @apply text-black text-2xl font-normal cursor-pointer hover:underline;
+  @apply text-black text-xl sm:text-2xl font-normal cursor-pointer hover:underline;
+}
+
+.mobile-menu {
+  @apply bg-[#f9f5f2] px-4 py-6 border-t border-black;
 }
 
 .review-card {
@@ -300,19 +301,19 @@
 }
 
 .review-category {
-  @apply text-xs text-gray-500 mb-1 /* font-sourcecode */;
+  @apply text-xs text-gray-500 mb-1 ;
 }
 
 .review-title {
-  @apply text-lg font-bold text-black /* font-sourcecode */;
+  @apply text-lg font-bold text-black ;
 }
 
 .review-description {
-  @apply text-sm text-gray-700 mt-2 /* font-sourcecode */;
+  @apply text-sm text-gray-700 mt-2 ;
 }
 
 .review-button {
-  @apply mt-2 w-fit px-4 py-1 border border-black rounded-md shadow-[2px_2px_0px_0px_black] /* font-sourcecode */ text-sm;
+  @apply mt-2 w-fit px-4 py-1 border border-black rounded-md shadow-[2px_2px_0px_0px_black] text-sm;
 }
 
 .whatido-section {
