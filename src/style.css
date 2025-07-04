@@ -324,20 +324,34 @@
 }
 
 .whatido-title {
-  @apply text-4xl font-bold;
+ @apply text-[48px] font-extrabold text-black mb-4;
 }
 
 .whatido-subtitle {
-  @apply text-gray-500 mt-2;
+  @apply text-[20px] text-black max-w-2xl mx-auto;
 }
+
+/* .skills-wrapper {
+  @apply flex flex-wrap justify-center gap-8 max-w-7xl mx-auto px-6;
+} */
 
 .skills-wrapper {
-  @apply flex flex-wrap justify-center gap-8 max-w-7xl mx-auto px-6;
+  @apply grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 
+         max-w-6xl mx-auto px-4 justify-center;
 }
 
+
+
+
 .skill-card {
-  @apply w-[375px] h-[264px] bg-white rounded-xl border shadow-md p-6 text-center flex items-center justify-center hover:shadow-xl transition;
+  @apply w-full max-w-[220px] h-[230px]
+         bg-white/60 rounded-xl border border-white/20
+         backdrop-blur-md shadow-md p-6 text-center
+         flex flex-col items-center justify-center
+         hover:shadow-xl transition;
 }
+
+
 
 .skill-title {
   @apply text-lg font-bold;

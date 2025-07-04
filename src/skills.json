@@ -1,0 +1,91 @@
+
+{
+  "skills": [
+    {
+      "id": 1,
+      "name": "React",
+      "img": "react.svg"
+    },
+    {
+      "id": 2,
+      "name": "Tailwind CSS",
+      "img": "tailwind.png"
+    },
+    {
+      "id": 3,
+      "name": "REST API",
+      "img": "restapi.png"
+    },
+    {
+      "id": 4,
+      "name": "React Query",
+      "img": "react-query.png"
+    },
+    {
+      "id": 5,
+      "name": "Zustand",
+      "img": "zustand.png"
+    },
+    {
+      "id": 6,
+      "name": "Responsive Design",
+      "img": "responsive.png"
+    },
+    {
+      "id": 7,
+      "name": "Dark/Light Mode",
+      "img": "dark-light-mode.jpeg"
+    },
+    {
+      "id": 8,
+      "name": "Git",
+      "img": "git.png"
+    },
+    {
+      "id": 9,
+      "name": "HTML",
+      "img": "html.png"
+    },
+    {
+      "id": 10,
+      "name": "CSS",
+      "img": "css3.png"
+    },
+    {
+      "id": 11,
+      "name": "JS",
+      "img": "js.png"
+    },
+    {
+      "id": 12,
+      "name": "ES6",
+      "img": "es6.PNG"
+    },
+    {
+      "id": 13,
+      "name": "React Router DOM",
+      "img": "react-router-dom.PNG"
+    },
+    {
+      "id": 14,
+      "name": "Figma To React",
+      "img": "react-to-figma.png"
+    },
+    {
+      "id": 15,
+      "name": "Gitlab",
+      "img": "git-lab.png"
+    },
+    {
+      "id": 16,
+      "name": "Githab",
+      "img": "githab.jpeg"
+    },
+    {
+      "id": 17,
+      "name": "Shadcn",
+      "img": "shadcn.png"
+    }
+  ]
+}
+
