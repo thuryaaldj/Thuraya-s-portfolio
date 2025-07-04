@@ -106,7 +106,7 @@
   }
 
   .contact-title {
-    @apply text-[120px] font-extrabold text-black;
+    @apply text-[40px] sm:text-[80px] md:text-[80px] lg:text-[100px] xl:text-[120px] font-extrabold text-black;
   }
 
   .contact-description {
@@ -332,9 +332,6 @@
   @apply text-[20px] text-black max-w-2xl mx-auto;
 }
 
-/* .skills-wrapper {
-  @apply flex flex-wrap justify-center gap-8 max-w-7xl mx-auto px-6;
-} */
 
 .skills-wrapper {
   @apply grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 
