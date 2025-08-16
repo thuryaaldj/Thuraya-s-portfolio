@@ -16,17 +16,6 @@ export default function MyProject() {
 
       <div className="projects-grid">
         {projectsData.projects.map((project) => (
-          // <a
-          //   key={id}
-          //   href={link}
-          //   target="_blank"
-          //   rel="noopener noreferrer"
-          //   className="my-project-card"
-          // >
-          //   <img src={image} alt={title} className="w-full h-40 object-cover mb-2" />
-          //   <h3 className="text-lg font-bold">{title}</h3>
-          //   <p>{description}</p>
-          // </a>
           
           <MyProjectCard
             key={project.id}

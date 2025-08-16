@@ -1,16 +1,55 @@
-import { useState } from "react";
+
 import HeroImage from "../assets/Hero.png";
 import { FaTimes } from "react-icons/fa";
+import { useGSAP } from "@gsap/react";
+import gsap from 'gsap'
+import { useRef , useState} from "react";
 
-const Hero = () => {
+ function Hero(){
+
+  const heroRef = useRef(null);
   const [showAbout, setShowAbout] = useState(false);
 
+  useGSAP(() => {
+    gsap.from(".hero-title", {
+      x: -50,          
+      opacity: 0,       
+      duration: 1,       
+      ease: "power2.out",  
+    });
+
+    gsap.from(".hero-description",{
+      y:30,
+      opacity:0,
+      duration:1,
+      delay:0.5,
+      ease:"power2.out",
+    })
+
+  gsap.fromTo(
+  ".hero-button",
+  {
+    x: 50,
+    opacity: 0,
+  },
+  {
+    x: 0,
+    opacity: 1,
+    duration: 1,
+    delay: 1,
+    ease: "power2.out",
+  }
+);
+  }, []);
   return (
-    <section className="hero-section">
+    <section ref={heroRef} className="hero-section">
       <div className="hero-container">
         <div className="hero-text">
           <p className="hero-greeting">Hi, my name is Thuraya</p>
-          <h1 className="hero-title">Front-End Developer</h1>
+          {/* <h1 className="hero-title">Front-End Developer</h1> */}
+          <h1 className="hero-title ">
+        Hi, I'm Thuraya
+      </h1>
           <p className="hero-description">
             I love crafting beautiful web experiences and responsive interfaces 
           </p>

@@ -24,18 +24,13 @@ const MyProjectCard = ({ image, title, description, githubLink, liveLink }) => {
     });
 
     const card = cardRef.current;
-    // const onEnter = () => tl.play();
-    // const onLeave = () => tl.reverse();
 
-    // card.addEventListener("mouseenter", onEnter);
-    // card.addEventListener("mouseleave", onLeave);
     card.addEventListener("mouseenter", () => tl.play());
     card.addEventListener("mouseleave", () => tl.reverse());
 
 
     return () => {
-      // card.removeEventListener("mouseenter", onEnter);
-      // card.removeEventListener("mouseleave", onLeave);
+
       card.removeEventListener("mouseenter", () => tl.play());
       card.removeEventListener("mouseleave", () => tl.reverse());
     };
