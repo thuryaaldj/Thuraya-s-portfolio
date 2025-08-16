@@ -1,15 +1,14 @@
 {
   "projects": [
     {
-      "id": 1,
-      "image":"vege.png",
-      "title": "Vege Store",
-      "description": "An online vegetable store with a clean interface and responsive layout.",
-      "githubLink": "https://github.com/thuryaaldj/Fru-vege-store.git",
-      "liveLink":"https://fru-vege-store.vercel.app/",
-      "technologies": ["React", "GSAP", "Tailwind CSS"]
-
-    },
+  "id": 1,
+  "image": "admin-dashboard.png",
+  "title": "Admin Dashboard",
+  "description": "A responsive and user-friendly admin dashboard with clean UI, interactive charts, dynamic tables, and efficient form handling for smooth management experience.",
+  "githubLink": "https://github.com/thuryaaldj/Admin-Dashboard.git",
+  "liveLink": "",
+  "technologies": ["React", "Next.js", "TypeScript", "Tailwind CSS", "shadcn/ui", "Recharts", "Lucide React", "React Hook Form", "Zod"]
+},
     {
       "id": 2,
       "image": "bus.png",
@@ -36,15 +35,18 @@
       "githubLink": "https://github.com/thuryaaldj/animated-awwwards.git",
       "liveLink":"https://animated-awwwards.vercel.app/",
       "technologies": ["React", "GSAP", "Tailwind CSS"]
-    },
-    {
-  "id": 5,
-  "image": "admin-dashboard.png",
-  "title": "Admin Dashboard",
-  "description": "A responsive and user-friendly admin dashboard with clean UI, interactive charts, dynamic tables, and efficient form handling for smooth management experience.",
-  "githubLink": "https://github.com/thuryaaldj/Admin-Dashboard.git",
-  "liveLink": "https://admin-dashboard.vercel.app/",
-  "technologies": ["React", "Next.js", "TypeScript", "Tailwind CSS", "shadcn/ui", "Recharts", "Lucide React", "React Hook Form", "Zod"]
-}
+    }
+    ,
+        {
+      "id": 5,
+      "image":"vege.png",
+      "title": "Vege Store",
+      "description": "An online vegetable store with a clean interface and responsive layout.",
+      "githubLink": "https://github.com/thuryaaldj/Fru-vege-store.git",
+      "liveLink":"https://fru-vege-store.vercel.app/",
+      "technologies": ["React", "GSAP", "Tailwind CSS"]
+
+    }
+
   ]
 }
